@@ -1,0 +1,160 @@
+/* greylight - #7B7575
+yellow - #FDDB29
+greydark - #7C7676 
+bg - #E5E5E5
+black - #111111  */
+
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #7B7575;
+    box-sizing: border-box;
+}
+
+/* style for ul */
+ul {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+ul li {
+    display: inline;
+    list-style: none;
+    margin-left: 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #7C7676;
+}
+/* ////////////////////// */
+
+#header {
+    background-image: url("../images/girl.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 300px;
+    height: 700px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+#logo_h1 {
+    color: #111111;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+#main {
+    background-color: #FDDB29;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#mywork_h1 {
+    font-size: 200px;
+    margin: 0px;
+    font-weight: bold;
+    color: #111111;
+}
+
+#mywork_nav {
+    margin-bottom: 50px;
+} 
+
+#mywork_nav ul li a{
+    font-size: 18px;
+}
+
+#footer {
+    background-color: #111111;
+    padding: 20px 300px;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-items: center;
+}
+#about_me {
+    /* background-color: #E5E5E5; */
+    display: flex;
+    margin-left: 60px;
+    flex-direction: column;
+    color: #111111;
+    position: fixed;
+}
+
+#about_me_wrap {
+    background-image: url("../images/fotome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 700px;
+    padding: 20px 30px;
+    border: 3px solid #FDDB29;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about_me header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about_me header p {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#about_me header button{
+    font-size: 14px;
+    font-weight: bold;
+    border: 3px solid #111111;
+    border-radius: 5%;
+    background-color: #E5E5E5;
+    padding: 10px 15px;
+}
+
+#about_me_wrap nav ul li span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #7B7575;
+}
+
+#about_me_wrap nav ul li {
+    display: block;
+    margin: 0;
+}
+#about_me_wrap nav ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+}
+
+#about_me_wrap p {
+    color:  #7B7575;
+    text-align: justify;
+}
+
+#about_me_wrap p span{
+    font-weight: bold;
+    color: #111111;
+}
