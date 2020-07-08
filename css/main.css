@@ -92,8 +92,7 @@ ul li a {
     align-items: center;
 }
 #about_me {
-    /* background-color: #E5E5E5; */
-    display: flex;
+    display: none;
     margin-left: 60px;
     flex-direction: column;
     color: #111111;
@@ -124,7 +123,7 @@ ul li a {
     font-weight: bold;
 }
 
-#about_me header button{
+#about_me_btnClose{
     font-size: 14px;
     font-weight: bold;
     border: 3px solid #111111;
