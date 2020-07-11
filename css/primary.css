@@ -1,0 +1,10 @@
+.primary {
+    background-color: #FDDB29;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+    flex-grow: 1;
+}
+
+

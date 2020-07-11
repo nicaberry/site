@@ -8,35 +8,33 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header id="header">
-       <div id="logo">
-           <p id="logo_h1">NICABERRY</p>
-       </div> 
-       <nav id="header_nav">
-           <ul>
-               <li><a href="#" id="about_me_btnOpen">ABOUT ME</a></li>
-               <li><a href="https://github.com/nicaberry" target="_blank">GITHUB</a></li>
-               <li><a href="mailto:nicaberry@yandex.ru" target="_blank">NICABERRY@YANDEX.RU</a></li>
-               <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank">HEADHUNTER</a></li>
-           </ul>
-       </nav>
+    <header class="header">
+        <p class="header__logo">NICABERRY</p>
+        <nav>
+            <ul class="header__menu">
+                <li><a href="#" id="about-me__btnOpen">ABOUT ME</a></li>
+                <li><a href="https://github.com/nicaberry" target="_blank">GITHUB</a></li>
+                <li><a href="mailto:nicaberry@yandex.ru" target="_blank">NICABERRY@YANDEX.RU</a></li>
+                <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank">HEADHUNTER</a></li>
+            </ul>
+        </nav>
     </header>
-    <section id="content">
-        <section id="about_me">
-            <header>
-                <p>ABOUT ME</p>
-                <button id="about_me_btnClose">CLOSE</button>
+    <main class="primary">
+        <section class="about-me">
+            <header class="about-me-header">
+                <p class="about-me-header__name">ABOUT ME</p>
+                <button id="about-me__btnClose">CLOSE</button>
             </header>
-            <div id="about_me_wrap">
+            <div class="about-me-main">
                 <nav>
-                    <ul>
+                    <ul class="about-me-main__menu">
                         <li><span>CONTACTS:</span></li>
                         <li><a href="mailto:nicaberry@yandex.ru" target="_blank">NICABERRY@YANDEX.RU</a></li>
                         <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank">HEADHUNTER</a></li>
                         <li><a href="https://github.com/nicaberry" target="_blank">GITHUB</a></li>
                     </ul>
                 </nav>
-                <div>
+                <div class="about-me-main__text">
                     <p>Привет! Меня зовут <span>Сонич Анна</span>,
                     и <span>я начинающий разработчик на JavaScript</span>.</p>
 
@@ -50,19 +48,42 @@
             </div>
         </section>
 
-        <section id="main">
-            <div id="mywork">
-                <p id="mywork_h1">MY WORK</p>
-                <nav id="mywork_nav">
-                    <ul>
+        <section class="my-work">
+            <header class="my-work-header">
+                <p class="my-work-header__name">MY WORK</p>
+                <nav>
+                    <ul class="my-work-header__menu">
                         <li><a href="">#JAVASCRIPT</a></li>
                         <li><a href="">#CSS</a></li>
                         <li><a href="">#HTML</a></li>
                     </ul>
                 </nav>
-            </div>
-            <div id="mywork_container">
+            </header>
+            <div class="my-work-container">
 
+                <div class="card">
+                    <div class="card_wrap_img">
+                        <img src="./images/calc.png" alt="image_my_work">
+                        <div class="card_wrap_img_github"><a href="" title="go github"><img src="./images/github-logo.png"></a></div>
+                    </div>
+                    <p class="card_name">CALCULATOR</p>
+                    <p class="card_subname">JAVASCRIPT/CSS/HTML</p>
+                </div>
+                <div class="card">
+                    <div class="card_wrap_img">
+                        <img src="./images/zmey.png" alt="image_my_work">
+                    </div>
+                    <p class="card_name">CALCULATOR</p>
+                    <p class="card_subname">JAVASCRIPT/CSS/HTML</p>
+                </div>
+                <div class="card">
+                    <div class="card_wrap_img">
+                        <img src="./images/girl.svg" alt="image_my_work">
+                    </div>
+                    <p class="card_name">CALCULATOR</p>
+                    <p class="card_subname">JAVASCRIPT/CSS/HTML</p>
+                </div>
+              
                 <div class="card">
                     <div class="card_wrap_img">
                         <img src="./images/calc.png" alt="image_my_work">
@@ -87,29 +108,15 @@
                 </div>
                 <div class="card">
                     <div class="card_wrap_img">
-                        <img src="./images/girl.svg" alt="image_my_work">
+                        <img src="./images/calc.png" alt="image_my_work">
+                        <div class="card_wrap_img_github"><a href="" title="go github"><img src="./images/github-logo.png"></a></div>
                     </div>
                     <p class="card_name">CALCULATOR</p>
                     <p class="card_subname">JAVASCRIPT/CSS/HTML</p>
                 </div>
                 <div class="card">
                     <div class="card_wrap_img">
-                        <img src="./images/girl.svg" alt="image_my_work">
-                    </div>
-                    <p class="card_name">CALCULATOR</p>
-                    <p class="card_subname">JAVASCRIPT/CSS/HTML</p>
-                </div>
-                <div class="card">
-                    <div class="card_wrap_img">
-                        <img src="./images/girl.svg" alt="image_my_work">
-                    </div>
-                    <p class="card_name">CALCULATOR</p>
-                    <p class="card_subname">JAVASCRIPT/CSS/HTML</p>
-                </div>
-
-                <div class="card">
-                    <div class="card_wrap_img">
-                        <img src="./images/girl.svg" alt="image_my_work">
+                        <img src="./images/zmey.png" alt="image_my_work">
                     </div>
                     <p class="card_name">CALCULATOR</p>
                     <p class="card_subname">JAVASCRIPT/CSS/HTML</p>
@@ -122,13 +129,14 @@
                     <p class="card_subname">JAVASCRIPT/CSS/HTML</p>
                 </div>
                 
+                
             </div>
         </section>
-    </section>
-    <footer id="footer">
-        <p><small>© NICABERRY</small></p>
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright"><small>© NICABERRY</small></p>
         <nav>
-            <ul>
+            <ul class="footer__menu">
                 <li><a href="https://github.com/nicaberry" target="_blank">GITHUB</a></li>
                 <li><a href="mailto:nicaberry@yandex.ru" target="_blank">NICABERRY@YANDEX.RU</a></li>
                 <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank">HEADHUNTER</a></li>

@@ -1,0 +1,40 @@
+.card {
+    width: 350px;
+    height: 420px;
+    background-color: #E5E5E5;
+    margin: 30px;
+    padding: 40px 10px 10px 10px;
+    color: #111111;
+}
+
+.card_wrap_img {
+    width: 300px;
+    height: 270px;
+    /* background-color: #b8b4b4; */
+    border: 3px solid #111111;
+    margin: 0 auto;
+    position: relative;
+}
+.card_wrap_img img {
+    width: 100%;
+    height: 100%;
+}
+.card_wrap_img_github {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.card_name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-block-end: 0em;
+}
+
+.card_subname {
+    font-size: 14px;
+    color: #7B7575;
+    margin-block-start: 0em;
+}

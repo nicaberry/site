@@ -1,0 +1,13 @@
+.footer {
+    background-color: #111111;
+    padding: 30px 300px;
+    height: 100px;
+    color: #E5E5E5;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__menu li a {
+    color: #E5E5E5;
+}
