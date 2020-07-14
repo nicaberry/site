@@ -1,10 +1,35 @@
 .primary {
-    background-color: #FDDB29;
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    text-align: center;
-    flex-grow: 1;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 
+@media screen and (max-width: 1300px) {
+    .primary {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .primary {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .primary {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .primary {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .primary {
+        width: 100%;
+    }
+}

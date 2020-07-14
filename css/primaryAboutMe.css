@@ -3,7 +3,10 @@
     width: 500px;
     flex-direction: column;
     color: #111111;
-    margin: 60px;
+    position: absolute;
+    margin-top: 60px;
+    z-index: 1;
+
 }
 
 .about-me-header {
@@ -23,7 +26,7 @@
     font-weight: bold;
     border: 3px solid #111111;
     border-radius: 3px;
-    background-color: #FDDB29;
+    background-color: #E5E5E5;
     padding: 10px 15px;
 }
 
