@@ -17,8 +17,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: rgb(238,174,202);
-    background: linear-gradient(6deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: white;
+    /* background: rgb(238,174,202); */
+    /* background: linear-gradient(6deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
 }
 
 a {
