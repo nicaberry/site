@@ -1,11 +1,20 @@
 .footer {
     width: 1200px;
-    height: 150px;
+    height: 350px;
     margin: 0 auto;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.footer__copyright {
+    color: #111111;
+}
+
+.footer__menu img {
+    display: inline;
+    width: 35px;
+    box-shadow: -3px 3px 0px 1px pink;
 }
 
 @media screen and (max-width: 1300px) {
@@ -14,21 +23,3 @@
     }
 }
 
-@media screen and (max-width: 900px) {
-    .footer {
-    }
-
-    .footer__menu {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .footer {
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .footer {
-    }
-}
