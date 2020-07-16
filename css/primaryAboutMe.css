@@ -1,74 +1,80 @@
 .about-me {
-    display: none;
-    width: 500px;
-    flex-direction: column;
-    color: #111111;
-    position: absolute;
-    margin-top: 60px;
-    z-index: 1;
-
-}
-
-.about-me-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5px;
-}
-
-.about-me-header__name {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.about-me-header button {
-    font-size: 14px;
-    font-weight: bold;
-    border: 3px solid #111111;
-    border-radius: 3px;
-    background-color: #E5E5E5;
-    padding: 10px 15px;
-}
-
-.about-me-main {
-    background-image: url("../images/fotome.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 500px;
-    height: 700px;
     padding: 30px;
     border: 3px solid #111111;
     border-radius: 3px;
+    color: #111111;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.about-me__wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
-.about-me-main__menu li {
-    display: block;
-    margin: 0;
-    text-align: left;
+.about-me__wrap_name {
+    width: 30%;
 }
-.about-me-main__menu li a {
-    font-size: 16px;
+
+.about-me__wrap_about {
+    width: 40%;
+}
+
+.about-me__wrap_menu {
+    width: 20%;
+}
+.about-me__hello {
+    margin: 20px 0px;
+}
+.about-me__name {
+    font-size: 40px;
     font-weight: bold;
-    color: #111111;
+    text-align: center;
 }
 
-.about-me-main__menu li span {
+.about-me__fotome {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.about-me__buttonClose {
     font-size: 14px;
     font-weight: bold;
-    color: #7B7575;
+    border: 3px solid #111111;
+    border-radius: 3px;
+    background-color: white;
+    padding: 10px 15px;
+    box-shadow: -3px 3px 0px 1px pink;
 }
 
-
-
-.about-me-main__text p {
-    color:  #7B7575;
-    text-align: justify;
+.about-me__menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.about-me-main__text p span{
+.about-me__menu li {
+    display: inline;
+}
+
+.about-me__menu img {
+    display: block;
+    width: 35px;
+    box-shadow: -3px 3px 0px 1px pink;
+}
+.about p {
+    font-size: 24px;
+    color: pink;
+}
+.about p,
+.about li span {
     font-weight: bold;
+}
+.about li {
+    color: grey;
+}
+.about li span {
     color: #111111;
 }

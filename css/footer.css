@@ -12,7 +12,7 @@
 }
 
 .footer__menu img {
-    display: inline;
+    display: inline-block;
     width: 35px;
     box-shadow: -3px 3px 0px 1px pink;
 }

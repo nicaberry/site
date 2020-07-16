@@ -15,7 +15,7 @@
         </div>
         <nav class="header__nav">
             <ul class="header__menu">
-                <li><a href="#" id="about-me__btnOpen">ABOUT ME</a></li>
+                <li><a href="#" id="about-me__buttonOpen">ABOUT ME</a></li>
                 <li><a href="https://github.com/nicaberry" target="_blank">GITHUB</a></li>
                 <li><a href="mailto:nicaberry@yandex.ru" target="_blank">NICABERRY@YANDEX.RU</a></li>
                 <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank">HEADHUNTER</a></li>
@@ -23,31 +23,61 @@
         </nav>
     </header>
     <main class="primary">
-        <section class="about-me">
-            <header class="about-me-header">
-                <p class="about-me-header__name">ABOUT ME</p>
-                <button id="about-me__btnClose">CLOSE</button>
-            </header>
-            <div class="about-me-main">
+        <section class="about-me">   
+            <div class="about-me__wrap about-me__wrap_name">
+                <img class="about-me__fotome" src="./images/fotome.jpg">
+                <p class="about-me__name">SONICH ANNA</p>
+            </div> 
+            <div class="about-me__wrap about-me__wrap_about">
+                <div class="about about__education">
+                    <p>EDUCATION:</p>
+                    <ul>
+                    <li><span>ITAcademy г.Минска курс “разработка веб-приложений на JavaScript”</span>.</li>
+                    <li>самостоятельная работа по изучению 
+                        HTML/HTML5, CSS/CSS3, JavaScript/ES6.</li>
+                    </ul>
+                </div>
+                <div class="about about__skills">
+                    <p>SKILLS:</p>
+                    <ul>
+                        <li><span>HTML/HTML5:</span> elementary.</li>
+                        <li><span>JAVASCRIPT:</span> elementary.</li>
+                        <li><span>CSS/CSS3:</span> elementary.</li>
+                    </ul>
+                </div>
+                <div class="about about__english">
+                    <p>ENGLISH:</p>
+                    <ul>
+                        <li><span>READ:</span> intermediate.</li>
+                        <li><span>SPIKER:</span> elementary.</li>
+                        <li><span>WRITE:</span> elementary.</li>
+                    </ul>
+                </div>
+                <div class="about about__hobbies">
+                    <p>HOBBIES:</p>
+                    <ul>
+                        <li><span>ILUSTRATOR.</span></li>
+                        <li><span>MY CATS.</span></li>
+                        <li><span>BIKE.</span></li>
+                        <li><span>SUP.</span></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="about-me__wrap about-me__wrap_menu">
+                <button class="about-me__buttonClose" id="about-me__buttonClose">CLOSE</button>
+                <div class="about about__hello">
+                    <p>HELLO!</p> 
+                    <p>Меня зовут Сонич Анна,
+                    и я начинающий разработчик на JavaScript.</p>
+                </div>
                 <nav>
-                    <ul class="about-me-main__menu">
-                        <li><span>CONTACTS:</span></li>
-                        <li><a href="mailto:nicaberry@yandex.ru" target="_blank">NICABERRY@YANDEX.RU</a></li>
-                        <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank">HEADHUNTER</a></li>
-                        <li><a href="https://github.com/nicaberry" target="_blank">GITHUB</a></li>
+                    <ul class="about-me__menu">
+                        <li><a href="https://github.com/nicaberry" target="_blank"><img src="./images/github-logo.svg"></a></li>
+                        <li><a href="mailto:nicaberry@yandex.ru" target="_blank"><img src="./images/mail-logo.svg"></a></li>
+                        <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank"><img src="./images/headhunter-logo.svg"></a></li>
                     </ul>
                 </nav>
-                <div class="about-me-main__text">
-                    <p>Привет! Меня зовут <span>Сонич Анна</span>,
-                    и <span>я начинающий разработчик на JavaScript</span>.</p>
-
-                    <p><span>Моё образование</span> это ITAcademy г.Минска 
-                    по курсу <span>“разработка веб-приложений на JavaScript”</span>
-                    и самостоятельная работа по изучению 
-                    HTML/HTML5, CSS/CSS3, JavaScript/ES6.</p>
-                    
-                    <p>Уровень моего <span>английского средний</span>.</p>
-                </div>
             </div>
         </section>
 
