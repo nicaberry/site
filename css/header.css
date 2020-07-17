@@ -6,23 +6,39 @@
     justify-content: space-between;
     align-items: center;
 }
-.header__menu a:hover {
+.header__menu-max a:hover {
     padding: 10px 15px;
     color: #111111;
     font-weight: bold;
+    border-radius: 3px;
     border: 3px solid black;
     box-shadow: -3px 3px 0px 1px pink;
+}
+
+.header__menu-max li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.header__menu-min li {
+    margin-left: 30px;
 }
 
 .header__logo {
     color: #111111;
     font-weight: bold;
-    font-size: 18px;
-}
-.header__burger {
-    display: none;
+    font-size: 24px;
 }
 
+.header__menu-min img {
+    display: inline-block;
+    width: 35px;
+    box-shadow: -3px 3px 0px 1px pink;
+}
+
+.header__menu-min {
+    display: none;
+}
 
 @media screen and (max-width: 1300px) {
     .header {
@@ -31,20 +47,18 @@
 }
 
 @media screen and (max-width: 900px) {
-    .header__menu,
-    .header__nav {
+    .header__menu-max {
         display: none;
     }
-    .header__burger {
-        display: block;
+    .header__menu-min {
+        display: flex;
     }
-    #header-burger__button img {
-        max-width: 100%;
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 60px;
     }
-    #header-burger__button {
-        background-color: white;
-        border: none;
-        width: 40px;
-        height: 30px;
+    .header__menu-min li {
+        margin: 15px;
     }
 }

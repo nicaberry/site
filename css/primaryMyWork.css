@@ -1,12 +1,12 @@
 .my-work {
     width: 100%;
     margin: 0 auto;
+    margin-top: 100px;
     text-align: center;
 }
 
 .my-work-header__name {
     font-size: 200px;
-    margin-top: 60px;
     font-weight: bold;
     color: #111111;
 }

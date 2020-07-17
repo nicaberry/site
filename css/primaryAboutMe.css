@@ -1,10 +1,10 @@
 .about-me {
-    padding: 30px;
+    padding: 40px;
     border: 3px solid #111111;
     border-radius: 3px;
     color: #111111;
     margin-top: 60px;
-    display: grid;
+    display: none;
     gap: 20px;
     grid-template-areas: 
     "foto skills close"
@@ -90,13 +90,14 @@
 }
 
  @media screen and (max-width: 1300px) {
-   .about-me {
-       grid-template-areas: 
-       "name close"
-       "foto skills"
-       "hello skills"
-       "menu skills";
-   }
+    .about-me {
+        grid-template-areas: 
+        "name close"
+        "foto skills"
+        "hello skills"
+        "menu skills";
+    }
+  
    .about-me__menu {
     justify-content: flex-start;
     }
