@@ -6,11 +6,6 @@
 @import "../css/card.css";
 @import "../css/footer.css";
 
-/* greylight - #7B7575
-yellow - #FDDB29
-greydark - #7C7676 
-bg - #E5E5E5
-black - #111111  */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -18,12 +13,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background: white;
-    /* background: rgb(238,174,202); */
-    /* background: linear-gradient(6deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
 }
 
 a {
     color: #7C7676;
+    transition: all linear 0.2s;
 }
 
 .header__menu li,

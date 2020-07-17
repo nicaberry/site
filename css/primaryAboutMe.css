@@ -4,41 +4,46 @@
     border-radius: 3px;
     color: #111111;
     margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "foto skills close"
+    "foto skills hello"
+    "name skills menu";
 }
-.about-me__wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#foto {
+    grid-area: foto;
 }
-.about-me__wrap_name {
-    width: 30%;
+#skills {
+    grid-area: skills;
 }
-
-.about-me__wrap_about {
-    width: 40%;
+#about-me__buttonClose {
+    grid-area: close;
 }
-
-.about-me__wrap_menu {
-    width: 20%;
+#name {
+    grid-area: name;
 }
-.about-me__hello {
-    margin: 20px 0px;
+#hello {
+    grid-area: hello;
+}
+#menu {
+    grid-area: menu;
+}
+.about-me__fotome {
+    display: block;
+    max-width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
 }
 .about-me__name {
     font-size: 40px;
     font-weight: bold;
-    text-align: center;
 }
-
-.about-me__fotome {
-    display: block;
-    max-width: 100%;
-    margin-bottom: 20px;
-}
-
 .about-me__buttonClose {
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    justify-self: end;
     font-size: 14px;
     font-weight: bold;
     border: 3px solid #111111;
@@ -47,14 +52,6 @@
     padding: 10px 15px;
     box-shadow: -3px 3px 0px 1px pink;
 }
-
-.about-me__menu {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
 .about-me__menu li {
     display: inline;
 }
@@ -78,3 +75,32 @@
 .about li span {
     color: #111111;
 }
+
+.about__hello p{
+    font-size: 20px;
+}
+.about-me__menu {
+    padding: 0;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.about-me__menu li {
+    margin: 15px;
+}
+
+ @media screen and (max-width: 1300px) {
+   .about-me {
+       grid-template-areas: 
+       "name close"
+       "foto skills"
+       "hello skills"
+       "menu skills";
+   }
+   .about-me__menu {
+    justify-content: flex-start;
+    }
+    .about__hello p{
+        font-size: 18px;
+    }
+} 

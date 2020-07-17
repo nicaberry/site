@@ -17,11 +17,11 @@
 }
 .my-work-container {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 1300px) {
@@ -55,3 +55,4 @@
         justify-content: center;
     }
 }
+

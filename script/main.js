@@ -8,6 +8,6 @@ window.onload = (e) => {
     }
 
     btnOpenAboutMe.onclick = (e) => {
-        divAboutMe.style.display = "flex";
+        divAboutMe.style.display = "grid";
     }
 }
