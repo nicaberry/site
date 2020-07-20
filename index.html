@@ -9,65 +9,67 @@
 </head>
 <body>
     <header class="header">
-        <p class="header__logo">NICABERRY</p> 
-        <nav>
-            <ul class="header__menu-min">
-                <li><a href="#" ><img src="./images/about-me-logo.svg"></a></li>
-                <li><a href="https://github.com/nicaberry" target="_blank"><img src="./images/github-logo.svg"></a></li>
-                <li><a href="mailto:nicaberry@yandex.ru" target="_blank"><img src="./images/mail-logo.svg"></a></li>
-                <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank"><img src="./images/headhunter-logo.svg"></a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul class="header__menu-max">
-                <li><a href="#" id="about-me__buttonOpen">ABOUT ME</a></li>
-                <li><a href="https://github.com/nicaberry" target="_blank">GITHUB</a></li>
-                <li><a href="mailto:nicaberry@yandex.ru" target="_blank">NICABERRY@YANDEX.RU</a></li>
-                <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank">HEADHUNTER</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <img class="header-img" src="./images/nica.svg">
+            <nav>
+                <ul class="header__menu-min">
+                    <li><a href="#" id="about-me__buttonOpen_min"><img src="./images/about-me-logo.svg"></a></li>
+                    <li><a href="https://github.com/nicaberry" target="_blank"><img src="./images/github-logo.svg"></a></li>
+                    <li><a href="mailto:nicaberry@yandex.ru" target="_blank"><img src="./images/mail-logo.svg"></a></li>
+                    <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank"><img src="./images/headhunter-logo.svg"></a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="header__menu-max">
+                    <li><a href="#" id="about-me__buttonOpen_max">about me</a></li>
+                    <li><a href="https://github.com/nicaberry" target="_blank">github</a></li>
+                    <li><a href="mailto:nicaberry@yandex.ru" target="_blank">nicaberry@yandex.ru</a></li>
+                    <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank">headhunter</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="primary">
-        <section class="about-me">   
+        <div class="primary-container">
+            <section class="about-me">   
                 <img id="foto" class="about-me__fotome" src="./images/fotome.jpg">
                 <p id="name" class="about-me__name">SONICH ANNA</p>
                 <div id="skills">
-                <div class="about about__education">
-                    <p>EDUCATION:</p>
-                    <ul>
-                    <li><span>ITAcademy, Minsk, web application development with JavaScript</span>.</li>
-                    </ul>
+                    <div class="about about__education">
+                        <p>EDUCATION:</p>
+                        <ul>
+                        <li><span>ITAcademy, Minsk, web application development with JavaScript</span>.</li>
+                        </ul>
+                    </div>
+                    <div class="about about__skills">
+                        <p>SKILLS:</p>
+                        <ul>
+                            <li><span>HTML/HTML5:</span> elementary.</li>
+                            <li><span>JavaScript:</span> elementary.</li>
+                            <li><span>CSS/CSS3:</span> elementary.</li>
+                            <li><span>Flexbox:</span> elementary.</li>
+                            <li><span>Grid:</span> beginner.</li>
+                            <li><span>jQuery:</span> elementary.</li>
+                            <li><span>Git:</span> elementary.</li>
+                        </ul>
+                    </div>
+                    <div class="about about__english">
+                        <p>ENGLISH:</p>
+                        <ul>
+                            <li><span>READ:</span> intermediate.</li>
+                            <li><span>SPIKER:</span> elementary.</li>
+                            <li><span>WRITE:</span> elementary.</li>
+                        </ul>
+                    </div>
+                    <div class="about about__hobbies">
+                        <p>HOBBIES:</p>
+                        <ul>
+                            <li><span>CATS.</span></li>
+                            <li><span>BIKE.</span></li>
+                            <li><span>SUP.</span></li>
+                        </ul>
+                    </div>   
                 </div>
-                <div class="about about__skills">
-                    <p>SKILLS:</p>
-                    <ul>
-                        <li><span>HTML/HTML5:</span> elementary.</li>
-                        <li><span>JavaScript:</span> elementary.</li>
-                        <li><span>CSS/CSS3:</span> elementary.</li>
-                        <li><span>Flexbox:</span> elementary.</li>
-                        <li><span>Grid:</span> beginner.</li>
-                        <li><span>jQuery:</span> elementary.</li>
-                        <li><span>Git:</span> elementary.</li>
-                    </ul>
-                </div>
-                <div class="about about__english">
-                    <p>ENGLISH:</p>
-                    <ul>
-                        <li><span>READ:</span> intermediate.</li>
-                        <li><span>SPIKER:</span> elementary.</li>
-                        <li><span>WRITE:</span> elementary.</li>
-                    </ul>
-                </div>
-                <div class="about about__hobbies">
-                    <p>HOBBIES:</p>
-                    <ul>
-                        <li><span>CATS.</span></li>
-                        <li><span>BIKE.</span></li>
-                        <li><span>SUP.</span></li>
-                    </ul>
-                </div>
-                
-            </div>
                 <button class="about-me__buttonClose" id="about-me__buttonClose">CLOSE</button>
                 <div id="hello" class="about about__hello">
                     <p>Hello!</p> 
@@ -82,97 +84,100 @@
                         <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank"><img src="./images/headhunter-logo.svg"></a></li>
                     </ul>
                 </nav>
-            </div>
-        </section>
+            </section>
 
-        <section class="my-work">
-            <header class="my-work-header">
-                <p class="my-work-header__name">MY WORK</p>
-            </header>
-            <div class="my-work-container"> 
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./images/zmey.png" alt="image_my_work">
+            <section class="my-work">
+                <header class="my-work-header">
+                    <p class="my-work-header__name">NICABERRY'S</p>
+                    <p class="my-work-header__subname">PORTFOLIO</p>
+                </header>
+                <div class="my-work-container">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/zmey.png" alt="image_my_work">
+                        </div>
+                        <div class="card-header">
+                            <a href="" title="go" class="card-header__name">ZMEY</a>
+                            <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
+                            <a href="" title="go github" class="card-header__github">GITHUB</a>
+                        </div>
                     </div>
-                    <div class="card-header">
-                        <a href="" title="go" class="card-header__name">ZMEY</a>
-                        <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
-                        <a href="" title="go github" class="card-header__github">GITHUB</a>
+                
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/girl.svg" alt="image_my_work">
+                        </div>
+                        <div class="card-header">
+                            <a href="" title="go" class="card-header__name">ZMEY</a>
+                            <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
+                            <a href="" title="go github" class="card-header__github">GITHUB</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/fotome.jpg" alt="image_my_work">
+                        </div>
+                        <div class="card-header">
+                            <a href="" title="go" class="card-header__name">ZMEY</a>
+                            <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
+                            <a href="" title="go github" class="card-header__github">GITHUB</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/fotome.jpg" alt="image_my_work">
+                        </div>
+                        <div class="card-header">
+                            <a href="" title="go" class="card-header__name">ZMEY</a>
+                            <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
+                            <a href="" title="go github" class="card-header__github">GITHUB</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/girl.svg" alt="image_my_work">
+                        </div>
+                        <div class="card-header">
+                            <a href="" title="go" class="card-header__name">ZMEY</a>
+                            <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
+                            <a href="" title="go github" class="card-header__github">GITHUB</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/girl.svg" alt="image_my_work">
+                        </div>
+                        <div class="card-header">
+                            <a href="" title="go" class="card-header__name">ZMEY</a>
+                            <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
+                            <a href="" title="go github" class="card-header__github">GITHUB</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/girl.svg" alt="image_my_work">
+                        </div>
+                        <div class="card-header">
+                            <a href="" title="go" class="card-header__name">ZMEY</a>
+                            <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
+                            <a href="" title="go github" class="card-header__github">GITHUB</a>
+                        </div>
                     </div>
                 </div>
-             
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./images/girl.svg" alt="image_my_work">
-                    </div>
-                    <div class="card-header">
-                        <a href="" title="go" class="card-header__name">ZMEY</a>
-                        <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
-                        <a href="" title="go github" class="card-header__github">GITHUB</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./images/fotome.jpg" alt="image_my_work">
-                    </div>
-                    <div class="card-header">
-                        <a href="" title="go" class="card-header__name">ZMEY</a>
-                        <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
-                        <a href="" title="go github" class="card-header__github">GITHUB</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./images/fotome.jpg" alt="image_my_work">
-                    </div>
-                    <div class="card-header">
-                        <a href="" title="go" class="card-header__name">ZMEY</a>
-                        <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
-                        <a href="" title="go github" class="card-header__github">GITHUB</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./images/girl.svg" alt="image_my_work">
-                    </div>
-                    <div class="card-header">
-                        <a href="" title="go" class="card-header__name">ZMEY</a>
-                        <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
-                        <a href="" title="go github" class="card-header__github">GITHUB</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./images/girl.svg" alt="image_my_work">
-                    </div>
-                    <div class="card-header">
-                        <a href="" title="go" class="card-header__name">ZMEY</a>
-                        <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
-                        <a href="" title="go github" class="card-header__github">GITHUB</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img">
-                        <img src="./images/girl.svg" alt="image_my_work">
-                    </div>
-                    <div class="card-header">
-                        <a href="" title="go" class="card-header__name">ZMEY</a>
-                        <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p>
-                        <a href="" title="go github" class="card-header__github">GITHUB</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer class="footer">
-        <p class="footer__copyright"><small>© NICABERRY</small></p>
-        <nav>
-            <ul class="footer__menu">
-                <li><a href="https://github.com/nicaberry" target="_blank"><img src="./images/github-logo.svg"></a></li>
-                <li><a href="mailto:nicaberry@yandex.ru" target="_blank"><img src="./images/mail-logo.svg"></a></li>
-                <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank"><img src="./images/headhunter-logo.svg"></a></li>
-            </ul>
-        </nav>
+        <div class="footer-container">
+            <p class="footer__copyright"><small>© NICABERRY</small></p>
+            <nav>
+                <ul class="footer__menu">
+                    <li><a href="https://github.com/nicaberry" target="_blank"><img src="./images/github-logo.svg"></a></li>
+                    <li><a href="mailto:nicaberry@yandex.ru" target="_blank"><img src="./images/mail-logo.svg"></a></li>
+                    <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank"><img src="./images/headhunter-logo.svg"></a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 
     <script src="script/main.js"></script>

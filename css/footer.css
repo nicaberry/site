@@ -1,5 +1,10 @@
 .footer {
-    width: 1200px;
+    width: 100%;
+    border-top: 3px solid pink;
+}
+
+.footer-container {
+    width: 1170px;
     height: 350px;
     margin: 0 auto;
 
@@ -7,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .footer__copyright {
     color: #111111;
 }
@@ -15,6 +21,10 @@
     display: inline-block;
     width: 35px;
     box-shadow: -3px 3px 0px 1px pink;
+}
+
+.footer__menu img:hover {
+    box-shadow: -3px 3px 0px 1px grey;
 }
 
 @media screen and (max-width: 1300px) {

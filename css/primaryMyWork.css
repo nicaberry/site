@@ -1,14 +1,18 @@
 .my-work {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 30px;
     text-align: center;
 }
 
 .my-work-header__name {
-    font-size: 200px;
+    font-size: 100px;
     font-weight: bold;
+    color: pink;
+    text-align: left;
+}
+.my-work-header__subname {
+    font-size: 40px;
     color: #111111;
+    text-align: left;
 }
 
 .my-work-header__menu li {
@@ -16,8 +20,9 @@
     margin-left: 30px;
 }
 .my-work-container {
+    /* display: none; */
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
