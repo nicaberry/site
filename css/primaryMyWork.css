@@ -7,12 +7,10 @@
     font-size: 100px;
     font-weight: bold;
     color: pink;
-    text-align: left;
 }
 .my-work-header__subname {
     font-size: 40px;
     color: #111111;
-    text-align: left;
 }
 
 .my-work-header__menu li {
@@ -20,44 +18,30 @@
     margin-left: 30px;
 }
 .my-work-container {
-    /* display: none; */
     width: 100%;
     margin-top: 30px;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-@media screen and (max-width: 1300px) {
-    .my-work-header__name {
-        font-size: 150px;
-    }
-    .my-work-container {
-        justify-content: center;
-    }
-}
-
-
-@media screen and (max-width: 900px) {
-    .my-work-header__name {
-        font-size: 100px;
-    }
-}
-
-@media screen and (max-width: 840px) {
-    .my-work-header__name {
-        font-size: 100px;
-    }
-}
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
     .my-work-header__name {
         font-size: 70px;
     }
+    .my-work-header__subname {
+        font-size: 30px;
+    }
+} 
 
-    .my-work-container {
-        justify-content: center;
+@media screen and (max-width: 576px) {
+    .my-work-header__name {
+        font-size: 36px;
+    }
+    .my-work-header__subname {
+        font-size: 18px;
     }
 }
+
 

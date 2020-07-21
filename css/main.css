@@ -20,12 +20,6 @@ a {
     transition: all linear 0.2s;
 }
 
-.header__menu li,
-.footer__menu li {
-    font-size: 14px;
-    display: inline;
-    margin-left: 30px;
-}
 
 
 

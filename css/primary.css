@@ -1,36 +1,29 @@
 .primary {
     width: 100%;
     padding-top: 100px;
+    /* background: url(../images/nica-logo-dizzy.svg) no-repeat; */
 }
 
 .primary-container {
-    width: 1170px;
+    width: 1140px;
     margin: 0 auto;
 }
 
 
-@media screen and (max-width: 1300px) {
-    .primary {
-        width: 80%;
+@media screen and (max-width: 1200px) {
+    .primary-container {
+        width: 960px;
     }
 }
 
-@media screen and (max-width: 900px) {
-    .primary {
+@media screen and (max-width: 992px) {
+    .primary-container {
+        width: 720px;
     }
 }
 
-@media screen and (max-width: 840px) {
-    .primary {
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .primary {
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .primary {
+@media screen and (max-width: 768px) {
+    .primary-container {
+        width: 100%;
     }
 }
