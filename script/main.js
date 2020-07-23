@@ -46,7 +46,6 @@ window.onload = (e) => {
     }
 
     //MENU-SEARCH
-
     let aMenuSearch = document.querySelectorAll(".menu-search a");
 
     for (let i = 0; i < aMenuSearch.length; i++) {
