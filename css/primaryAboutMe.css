@@ -4,7 +4,7 @@
     border-radius: 3px;
     color: #111111;
     margin: 60px 15px 0 15px;
-    display: grid;
+    display: none;
     gap: 20px;
     grid-template-areas: 
     "foto skills close"

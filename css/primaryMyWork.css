@@ -11,6 +11,17 @@
 .my-work-header__subname {
     font-size: 40px;
     color: #111111;
+    margin-bottom: 30px;
+}
+.menu-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-search li a {
+    padding: 15px;
 }
 
 .my-work-header__menu li {
@@ -41,6 +52,10 @@
     }
     .my-work-header__subname {
         font-size: 18px;
+    }
+
+    .menu-search li a {
+        font-size: 14px;
     }
 }
 
