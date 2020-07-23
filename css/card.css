@@ -31,6 +31,7 @@
 .card-header__button {
     background-color: white;
     margin-bottom: 15px;
+    margin-left: -5px;
     font-size: 36px;
     vertical-align: middle;
     line-height: 36px;

@@ -45,5 +45,28 @@ window.onload = (e) => {
         }
     }
 
-    
+    //MENU-SEARCH
+
+    let aMenuSearch = document.querySelectorAll(".menu-search a");
+
+    for (let i = 0; i < aMenuSearch.length; i++) {
+        aMenuSearch[i].onclick = (e) => {
+            let data = aMenuSearch[i].dataset.search;
+            console.log(data);
+            for (let i = 0; i < cards.length; i++) {
+                if (data  === "all") {
+                    cards[i].style.display = "flex";
+                } else {
+                    cards[i].style.display = "none";
+                    let textSubName = cards[i].querySelector(".card-header__subname").textContent.split("/");
+                    textSubName.forEach((item) => {
+                       if (item.toUpperCase() === data.toUpperCase()) {
+                           cards[i].style.display = "flex";
+                       } 
+                    });
+                }
+            }
+        }
+        
+    }
 }
