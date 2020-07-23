@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/favicon-48.svg">
+    <link rel="icon" href="./images/favicon/favicon-48.svg">
     <title>NICABERRY</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -11,13 +11,13 @@
 <body>
     <header class="header">
         <div class="header-container">
-            <img class="header-logo" alt="site's logo" src="./images/nica-logo-joy.svg">
+            <img class="header-logo" alt="site's logo" src="./images/logo/nica-logo-joy.svg">
             <nav>
                 <ul class="header__menu-min">
-                    <li><a href="#" id="about-me__buttonOpen_min"><img src="./images/about-me-logo.svg" alt=""></a></li>
-                    <li><a href="https://github.com/nicaberry" target="_blank"><img src="./images/github-logo.svg" alt="github's logo"></a></li>
-                    <li><a href="mailto:nicaberry@yandex.ru" target="_blank"><img src="./images/mail-logo.svg" alt="mail's logo"></a></li>
-                    <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank" ><img src="./images/headhunter-logo.svg" alt="headhunter's logo"></a></li>
+                    <li><a href="#" id="about-me__buttonOpen_min"><img src="./images/menu/about-me-logo.svg" alt=""></a></li>
+                    <li><a href="https://github.com/nicaberry" target="_blank"><img src="./images/menu/github-logo.svg" alt="github's logo"></a></li>
+                    <li><a href="mailto:nicaberry@yandex.ru" target="_blank"><img src="./images/menu/mail-logo.svg" alt="mail's logo"></a></li>
+                    <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank" ><img src="./images/menu/headhunter-logo.svg" alt="headhunter's logo"></a></li>
                 </ul>
             </nav>
             <nav>
@@ -33,7 +33,7 @@
     <main class="primary">
         <div class="primary-container">
             <section class="about-me">   
-                <img id="foto" class="about-me__fotome" src="./images/fotome.jpg" alt="creater's foto">
+                <img id="foto" class="about-me__fotome" src="./images/fotoMe/fotome.jpg" alt="creater's foto">
                 <p id="name" class="about-me__name">SONICH ANNA</p>
                 <div id="skills">
                     <div class="about about__education">
@@ -74,16 +74,17 @@
                 </div>
                 <button class="about-me__buttonClose" id="about-me__buttonClose">CLOSE</button>
                 <div id="hello" class="about about__hello">
-                    <p>Hello!</p> 
-                    <p>I am Sonich Anna.</p>
-                    <p>I am a beginner programmer.</p>
-                    <p>JavaScript/CSS/HTML.</p>
+                    <p>Привет! Я начинающий фронтенд-разработчик. </p>
+                    <p>Обучаюсь самостоятельно. Изучаю HTML/HTML5, CSS/CSS3, SASS/SCSS, JAVASCRIPT/ES6, GIT, ...</p>
+                    <p>Хочу попасть на стажировку в классную компанию, для получения реальной практики.</p>
+                    <p>Если у Вас есть интересные предложения по поводу стажировки пишите мне на почту.</p>
+                    <p>Мои работы Вы можете посмотреть на этом сайте или на моём гитхабе.</p>
                 </div>
-                <nav id="menu">
-                    <ul class="about-me__menu">
-                        <li><a href="https://github.com/nicaberry" target="_blank"><img src="./images/github-logo.svg" alt="github's logo"></a></li>
-                        <li><a href="mailto:nicaberry@yandex.ru" target="_blank"><img src="./images/mail-logo.svg" alt="mail's logo"></a></li>
-                        <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank"><img src="./images/headhunter-logo.svg" alt="headhunter's logo"></a></li>
+                <nav >
+                    <ul id="menu" class="about-me__menu">
+                        <li><a href="https://github.com/nicaberry" target="_blank"><img src="./images/menu/github-logo.svg" alt="github's logo"></a></li>
+                        <li><a href="mailto:nicaberry@yandex.ru" target="_blank"><img src="./images/menu/mail-logo.svg" alt="mail's logo"></a></li>
+                        <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank"><img src="./images/menu/headhunter-logo.svg" alt="headhunter's logo"></a></li>
                     </ul>
                 </nav>
             </section>
@@ -102,44 +103,103 @@
                     </ul>
                 </nav>
                 <div class="my-work-container">
+                        <!-- ITTEN CIRCLE -->
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/myWork/IttenCircle.png" alt="Itten Circle">
+                            </div>
+                            <div class="card-header">
+                                <a href="./myWork/IttienCircle/index.html" class="card-header__name" target="_blank">Itten circle</a>
+                                <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p> 
+                                <button class="card-header__button card-header__descriptionOpenButton">&#8943;</button>
+                                <button class="card-header__button card-header__descriptionCloseButton">&#129044;</button>
+                                <p class="card-header__description">Выпускной проект IT Academy.</p>
+                                <a href="https://github.com/nicaberry/IttenCircle" class="card-header__github" target="_blank">GITHUB</a>
+                            </div>
+                        </div>
+                    <!-- GAMEXO -->
                     <div class="card">
                         <div class="card-img">
-                            <img src="./images/zmey.png" alt="image_my_work">
+                            <img src="./images/myWork/GameXO.png" alt="game XO">
                         </div>
                         <div class="card-header">
-                            <a href="" class="card-header__name" target="_blank">ZMEYJAVASCRIPT/CSS/HTMLJAVASCRIPT/CSS/HTML</a>
-                            <p class="card-header__subname">JAVASCRIPT</p> 
+                            <a href="./myWork/GameXO/index.html" class="card-header__name" target="_blank">GameXO</a>
+                            <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p> 
                             <button class="card-header__button card-header__descriptionOpenButton">&#8943;</button>
                             <button class="card-header__button card-header__descriptionCloseButton">&#129044;</button>
-                            <p class="card-header__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium blanditiis repellendus ad vitae omnis culpa consequuntur, magnam corrupti beatae totam earum quod cupiditate velit exercitationem expedita, nemo, iure molestias est?</p>
-                            <a href="" class="card-header__github" target="_blank">GITHUB</a>
+                            <p class="card-header__description">Игра "крестики и нолики".</p>
+                            <a href="https://github.com/nicaberry/GameXO" class="card-header__github" target="_blank">GITHUB</a>
                         </div>
                     </div>
-                
+                    <!-- CALCULATOR -->
                     <div class="card">
                         <div class="card-img">
-                            <img src="./images/zmey.png" alt="image_my_work">
+                            <img src="./images/myWork/Calculator.png" alt="calculator">
                         </div>
                         <div class="card-header">
-                            <a href="" class="card-header__name" target="_blank">ZMEYJAVASCRIPT/CSS/HTMLJAVASCRIPT/CSS/HTML</a>
-                            <p class="card-header__subname">CSS</p> 
+                            <a href="./myWork/Calculator/index.html" class="card-header__name" target="_blank">Calculator</a>
+                            <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p> 
                             <button class="card-header__button card-header__descriptionOpenButton">&#8943;</button>
                             <button class="card-header__button card-header__descriptionCloseButton">&#129044;</button>
-                            <p class="card-header__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium blanditiis repellendus ad vitae omnis culpa consequuntur, magnam corrupti beatae totam earum quod cupiditate velit exercitationem expedita, nemo, iure molestias est?</p>
-                            <a href="" class="card-header__github" target="_blank">GITHUB</a>
+                            <p class="card-header__description">Простой калькулятор на JavaScript.
+                                Выполняет простейшие арифметические операции.</p>
+                            <a href="https://github.com/nicaberry/calculator" class="card-header__github" target="_blank">GITHUB</a>
                         </div>
                     </div>
+                    <!-- GAME LIFE -->
                     <div class="card">
                         <div class="card-img">
-                            <img src="./images/zmey.png" alt="image_my_work">
+                            <img src="./images/myWork/GameLife.png" alt="game life">
                         </div>
                         <div class="card-header">
-                            <a href="" class="card-header__name" target="_blank">ZMEYJAVASCRIPT/CSS/HTMLJAVASCRIPT/CSS/HTML</a>
-                            <p class="card-header__subname">CSS/HTML</p> 
+                            <a href="./myWork/GameLive/index.html" class="card-header__name" target="_blank">Game Life</a>
+                            <p class="card-header__subname">JAVASCRIPT/HTML</p> 
                             <button class="card-header__button card-header__descriptionOpenButton">&#8943;</button>
                             <button class="card-header__button card-header__descriptionCloseButton">&#129044;</button>
-                            <p class="card-header__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium blanditiis repellendus ad vitae omnis culpa consequuntur, magnam corrupti beatae totam earum quod cupiditate velit exercitationem expedita, nemo, iure molestias est?</p>
-                            <a href="" class="card-header__github" target="_blank">GITHUB</a>
+                            <p class="card-header__description">Игра "жизнь".</p>
+                            <a href="https://github.com/nicaberry/game-live" class="card-header__github" target="_blank">GITHUB</a>
+                        </div>
+                    </div>
+                    <!-- BARLEY-BREAK -->
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="./images/myWork/BarleyBreak.png" alt="barley-break">
+                        </div>
+                        <div class="card-header">
+                            <a href="./myWork/BarleyBreak/index.html" class="card-header__name" target="_blank">Barley-break</a>
+                            <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p> 
+                            <button class="card-header__button card-header__descriptionOpenButton">&#8943;</button>
+                            <button class="card-header__button card-header__descriptionCloseButton">&#129044;</button>
+                            <p class="card-header__description">Игра "пятнашки".</p>
+                            <a href="https://github.com/nicaberry/game-15" class="card-header__github" target="_blank">GITHUB</a>
+                        </div>
+                    </div>
+                     <!-- SNAKE TODO -->
+                     <div class="card">
+                        <div class="card-img">
+                            <img src="./images/myWork/SnakeTodo.png" alt="game Snake">
+                        </div>
+                        <div class="card-header">
+                            <a href="./myWork/SnakeTodo/index.html" class="card-header__name" target="_blank">Snake Todo</a>
+                            <p class="card-header__subname">JAVASCRIPT/HTML</p> 
+                            <button class="card-header__button card-header__descriptionOpenButton">&#8943;</button>
+                            <button class="card-header__button card-header__descriptionCloseButton">&#129044;</button>
+                            <p class="card-header__description">Игра "змейка".</p>
+                            <a href="https://github.com/nicaberry/game-15" class="card-header__github" target="_blank">GITHUB</a>
+                        </div>
+                    </div>
+                     <!-- TASK -->
+                     <div class="card">
+                        <div class="card-img">
+                            <img src="./images/myWork/Task.png" alt="todo list">
+                        </div>
+                        <div class="card-header">
+                            <a href="./myWork/Task/index.html" class="card-header__name" target="_blank">Task</a>
+                            <p class="card-header__subname">JAVASCRIPT/CSS/HTML</p> 
+                            <button class="card-header__button card-header__descriptionOpenButton">&#8943;</button>
+                            <button class="card-header__button card-header__descriptionCloseButton">&#129044;</button>
+                            <p class="card-header__description">Приложение "список дел".</p>
+                            <a href="https://github.com/nicaberry/task" class="card-header__github" target="_blank">GITHUB</a>
                         </div>
                     </div>
                 </div>
@@ -151,9 +211,9 @@
             <p class="footer__copyright"><small>© NICABERRY</small></p>
             <nav>
                 <ul class="footer__menu">
-                    <li><a href="https://github.com/nicaberry" target="_blank"><img src="./images/github-logo.svg" alt="github's logo"></a></li>
-                    <li><a href="mailto:nicaberry@yandex.ru" target="_blank"><img src="./images/mail-logo.svg"  alt="mail's logo"></a></li>
-                    <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank"><img src="./images/headhunter-logo.svg"  alt="headhunter's logo"></a></li>
+                    <li><a href="https://github.com/nicaberry" target="_blank"><img src="./images/menu/github-logo.svg" alt="github's logo"></a></li>
+                    <li><a href="mailto:nicaberry@yandex.ru" target="_blank"><img src="./images/menu/mail-logo.svg"  alt="mail's logo"></a></li>
+                    <li><a href="https://krasnoyarsk.hh.ru/resume/9f61fb79ff07d0951c0039ed1f544848523950" target="_blank"><img src="./images/menu/headhunter-logo.svg"  alt="headhunter's logo"></a></li>
                 </ul>
             </nav>
         </div>

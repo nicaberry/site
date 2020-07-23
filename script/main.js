@@ -51,7 +51,6 @@ window.onload = (e) => {
     for (let i = 0; i < aMenuSearch.length; i++) {
         aMenuSearch[i].onclick = (e) => {
             let data = aMenuSearch[i].dataset.search;
-            console.log(data);
             for (let i = 0; i < cards.length; i++) {
                 if (data  === "all") {
                     cards[i].style.display = "flex";

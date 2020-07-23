@@ -1,7 +1,7 @@
 .card {
     color: #111111;
     border-radius: 3px;
-    border: 3px solid #111111;
+    border: 3px solid rgb(31, 30, 30);
     background: white;
     margin: 15px;
     transition: all linear;
@@ -19,7 +19,6 @@
 .card-img {
     width: 300px;
     height: 250px;
-    border-radius: 3px;
     overflow: hidden;
 }
 .card-header {

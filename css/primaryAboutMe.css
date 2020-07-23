@@ -35,10 +35,12 @@
     height: 450px;
     margin-bottom: 20px;
 }
+
 .about-me__name {
     font-size: 40px;
     font-weight: bold;
 }
+
 .about-me__buttonClose {
     height: 50px;
     width: 100px;
@@ -57,10 +59,6 @@
     box-shadow: -3px 3px 0px 1px grey;
 }
 
-.about-me__menu li {
-    display: inline;
-}
-
 .about-me__menu img {
     display: block;
     width: 35px;
@@ -70,7 +68,6 @@
 .about-me__menu img:hover {
     box-shadow: -3px 3px 0px 1px grey;
 }
-
 
 .about p {
     font-size: 24px;
@@ -87,15 +84,18 @@
     color: #111111;
 }
 
-.about__hello p{
-    font-size: 20px;
+.about__hello p {
+    font-size: 18px;
+    text-align: justify;
 }
+
 .about-me__menu {
     padding: 0;
     margin: 15px;
     display: flex;
     justify-content: space-between;
 }
+
 .about-me__menu li {
     margin: 15px;
 }
@@ -109,14 +109,9 @@
         "menu skills";
     }
   
-   .about-me__menu {
-    justify-content: flex-start;
-    }
-
     .about__hello p{
         font-size: 18px;
     }
-
 } 
 
 @media screen and (max-width: 1200px) {
@@ -133,6 +128,17 @@
         height: 350px;
     }
 
+} 
+
+@media screen and (max-width: 768px) {
+    .about__hello p {
+        font-size: 16px;
+    }
+
+    .about-me__fotome,
+    .about-me__name {  
+        justify-self: center;
+    }
 } 
 
 @media screen and (max-width: 576px) {
