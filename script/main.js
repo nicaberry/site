@@ -54,17 +54,58 @@ window.onload = (e) => {
             for (let i = 0; i < cards.length; i++) {
                 if (data  === "all") {
                     cards[i].style.display = "flex";
+                    cards[i].setAttribute("data-active", "true");
+                    sliderV();
                 } else {
                     cards[i].style.display = "none";
+                    cards[i].setAttribute("data-active", "false");
                     let textSubName = cards[i].querySelector(".card-header__subname").textContent.split("/");
                     textSubName.forEach((item) => {
                        if (item.toUpperCase() === data.toUpperCase()) {
                            cards[i].style.display = "flex";
+                           cards[i].setAttribute("data-active", "true");
+                           sliderV();
                        } 
                     });
                 }
             }
         }
-        
     }
-}
+
+    // SLIDER
+    function sliderV() {
+        let activeCards = document.querySelectorAll(".card[data-active=true]");
+        let sliderRightButton = document.querySelector(".slider__rightButton");
+        let sliderLeftButton = document.querySelector(".slider__leftButton");
+        let x = 0;
+        for (let i = 0; i < activeCards.length; i++) {
+            activeCards[i].style.transform = `translateX(${x}px)`;
+        }
+        let sizeSlider = 306;
+        let stopEnd = sizeSlider * activeCards.length;
+        sliderRightButton.onclick = (e) => {
+            x += -sizeSlider;
+                if (x - sizeSlider < -stopEnd) {
+                    x = 0; 
+                }  
+                for (let i = 0; i < activeCards.length; i++) {
+                        activeCards[i].style.transform = `translateX(${x}px)`;
+                }
+            }
+
+        sliderLeftButton.onclick = (e) => {
+            x += sizeSlider;
+                if (x > 0) {
+                    x += -stopEnd;
+                }
+                for (let i = 0; i < activeCards.length; i++) {
+                    activeCards[i].style.transform = `translateX(${x}px)`;
+                }
+            }
+        
+        }
+        
+        sliderV();
+    }
+    
+    

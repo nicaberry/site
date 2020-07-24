@@ -65,7 +65,7 @@
         height: 80px;
         flex-direction: column;
         justify-content: center;
-        background: url(../images/nica-logo-joy.svg) no-repeat 10px 10px;
+        background: url(../images/logo/nica-logo-joy.svg) no-repeat 10px 10px;
     }
 
     .header-logo {
