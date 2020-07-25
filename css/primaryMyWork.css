@@ -22,12 +22,22 @@
 
 .menu-search li a {
     padding: 15px;
+    color: grey;
+}
+
+.menu-search li:first-child a {
+    color: pink;
+    font-weight: bold;
+}
+.menu-search li a:hover {
+    color: black;
 }
 
 .my-work-header__menu li {
     display: inline;
     margin-left: 30px;
 }
+
 .my-work-container {
     width: 100%;
     margin-top: 30px;
