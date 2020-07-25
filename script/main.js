@@ -48,37 +48,56 @@ window.onload = (e) => {
     
 
     //MENU-SEARCH
-    let aMenuSearch = document.querySelectorAll(".menu-search a");
 
-    for (let i = 0; i < aMenuSearch.length; i++) {
-        aMenuSearch[i].onclick = (e) => {
-            for (let j = 0; j < aMenuSearch.length; j++) {
-                aMenuSearch[j].style.color = "grey";
-                aMenuSearch[j].style.fontWeight = "normal";
-            }
-            aMenuSearch[i].style.color = "pink";
-            aMenuSearch[i].style.fontWeight = "bold";
-            let data = aMenuSearch[i].dataset.search;
-            for (let i = 0; i < cards.length; i++) {
-                if (data  === "all") {
-                    cards[i].style.display = "flex";
-                    cards[i].setAttribute("data-active", "true");
-                    doSlider();
-                } else {
-                    cards[i].style.display = "none";
-                    cards[i].setAttribute("data-active", "false");
-                    let textSubName = cards[i].querySelector(".card-header__subname").textContent.split("/");
-                    textSubName.forEach((item) => {
-                       if (item.toUpperCase() === data.toUpperCase()) {
-                           cards[i].style.display = "flex";
-                           cards[i].setAttribute("data-active", "true");
-                           doSlider();
-                       } 
-                    });
-                }
-            }
+    let menuSerchOpenButton = document.querySelector(".select-search__openButton");
+    let menuLi = document.querySelectorAll(".select-search__wrap li");
+   
+    menuSerchOpenButton.onclick = (e) => {
+        for (let i = 0; i < menuLi.length; i++) {
+            menuLi[i].style.display = "block"; 
         }
     }
+    for (let i = 0; i < menuLi.length; i++) {
+        menuLi[i].onclick = (e) => {
+            for (let j = 0; j < menuLi.length; j++) {
+                menuLi[j].setAttribute("data-active", "false");
+                menuLi[j].style.display = "none"; 
+            } 
+            menuLi[i].setAttribute("data-active", "true");
+            menuLi[i].style.display = "block"; 
+        }
+    }
+    // let aMenuSearch = document.querySelectorAll(".menu-search a");
+
+    // for (let i = 0; i < aMenuSearch.length; i++) {
+    //     aMenuSearch[i].onclick = (e) => {
+    //         for (let j = 0; j < aMenuSearch.length; j++) {
+    //             aMenuSearch[j].style.color = "grey";
+    //             aMenuSearch[j].style.fontWeight = "normal";
+    //         }
+    //         aMenuSearch[i].style.color = "pink";
+    //         aMenuSearch[i].style.fontWeight = "bold";
+    //         let data = aMenuSearch[i].dataset.search;
+    //         for (let i = 0; i < cards.length; i++) {
+    //             if (data  === "all") {
+    //                 cards[i].style.display = "flex";
+    //                 cards[i].setAttribute("data-active", "true");
+    //                 doSlider();
+    //             } else {
+    //                 cards[i].style.display = "none";
+    //                 cards[i].setAttribute("data-active", "false");
+    //                 let textSubName = cards[i].querySelector(".card-header__subname").textContent.split("/");
+    //                 textSubName.forEach((item) => {
+    //                    if (item.toUpperCase() === data.toUpperCase()) {
+    //                        cards[i].style.display = "flex";
+    //                        cards[i].setAttribute("data-active", "true");
+    //                        doSlider();
+    //                    } 
+    //                 });
+    //             }
+    //         }
+    //     }
+    // }
 
     // DO SLIDER
     function doSlider() {
@@ -120,8 +139,24 @@ window.onload = (e) => {
         let slider = document.querySelector(".slider");
         let sliderWrap = document.querySelector(".slider__wrap");
         let sizeWindowForShowSlider = 576;
+        let sizeContainer = parseInt(window.getComputedStyle(myWorkContainer).width);
+        if (sizeContainer <= sizeWindowForShowSlider) {
+            slider.style.display = "block";
+            for (let i = 0; i < cards.length; i++) {
+                sliderWrap.append(cards[i]);
+            }
+
+        }
+        if (sizeContainer > sizeWindowForShowSlider) {
+            slider.style.display = "none";
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].style.transform = `translateX(0px)`;
+                myWorkContainer.append(cards[i]);
+            }
+
+        }
         window.onresize = (e) => {
-            let sizeContainer = parseInt(window.getComputedStyle(myWorkContainer).width);
+            sizeContainer = parseInt(window.getComputedStyle(myWorkContainer).width);
             if (sizeContainer <= sizeWindowForShowSlider) {
                 slider.style.display = "block";
                 for (let i = 0; i < cards.length; i++) {

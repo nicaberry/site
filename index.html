@@ -94,17 +94,19 @@
                     <p class="my-work-header__name">NICABERRY'S</p>
                     <p class="my-work-header__subname">PORTFOLIO</p>
                 </header>
-                <nav>
-                    <ul class="menu-search">
-                        <li><a href="#" data-search="all">#all</a></li>
-                        <li><a href="#" data-search="JavaScript">#JavaScript</a></li>
-                        <li><a href="#" data-search="HTML">#HTML</a></li>
-                        <li><a href="#" data-search="CSS">#CSS</a></li>
+                <div class="select-search">
+                    <ul class="select-search__wrap">
+                        <li data-active="true" data-search="all">#all</li>
+                        <li data-active="false" data-search="JavaScript">#JavaScript</li>
+                        <li data-active="false" data-search="HTML">#HTML</li>
+                        <li data-active="false" data-search="CSS">#CSS</li>
                     </ul>
-                </nav>
+                    <button class="select-search__openButton">></button>
+                </div>
                 <div class="my-work-container">
                     <div class="slider">
-                        <div class="slider__wrap"></div>
+                        <div class="slider__wrap">
+                        </div>
                         <button class="slider__leftButton">&#5176;</button>
                         <button class="slider__rightButton">&#5171;</button>
                     </div>
