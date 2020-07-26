@@ -4,7 +4,7 @@
     border: 3px solid rgb(31, 30, 30);
     background: white;
     margin: 15px;
-    transition: all linear;
+    transition: all ease-in-out 1s;
 
     display: flex;
     flex-direction: column;

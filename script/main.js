@@ -50,54 +50,44 @@ window.onload = (e) => {
     //MENU-SEARCH
 
     let menuSerchOpenButton = document.querySelector(".select-search__openButton");
-    let menuLi = document.querySelectorAll(".select-search__wrap li");
+    let menuLiNoActive = document.querySelectorAll(".select-search__wrap li[data-active=false]");
    
     menuSerchOpenButton.onclick = (e) => {
-        for (let i = 0; i < menuLi.length; i++) {
-            menuLi[i].style.display = "block"; 
+        for (let i = 0; i <menuLiNoActive.length; i++) {
+            menuLiNoActive[i].style.display = "block"; 
         }
     }
-    for (let i = 0; i < menuLi.length; i++) {
-        menuLi[i].onclick = (e) => {
-            for (let j = 0; j < menuLi.length; j++) {
-                menuLi[j].setAttribute("data-active", "false");
-                menuLi[j].style.display = "none"; 
+    for (let i = 0; i < menuLiNoActive.length; i++) {
+        menuLiNoActive[i].onclick = (e) => {
+            for (let j = 0; j < menuLiNoActive.length; j++) {
+                menuLiNoActive[j].style.display = "none"; 
             } 
-            menuLi[i].setAttribute("data-active", "true");
-            menuLi[i].style.display = "block"; 
+        let data = menuLiNoActive[i].getAttribute("data-search");
+        menuSerchOpenButton.innerHTML = "<span>#" + data + "</span> &#129171;"; 
+
+            
+
+            for (let i = 0; i < cards.length; i++) {
+                if (data  === "all") {
+                    cards[i].style.display = "flex";
+                    cards[i].setAttribute("data-active", "true");
+                    doSlider();
+                } else {
+                    cards[i].style.display = "none";
+                    cards[i].setAttribute("data-active", "false");
+                    let textSubName = cards[i].querySelector(".card-header__subname").textContent.split("/");
+                    textSubName.forEach((item) => {
+                        if (item.toUpperCase() === data.toUpperCase()) {
+                            cards[i].style.display = "flex";
+                            cards[i].setAttribute("data-active", "true");
+                            doSlider();
+                        } 
+                    });
+                }
+            }
         }
     }
-    // let aMenuSearch = document.querySelectorAll(".menu-search a");
 
-    // for (let i = 0; i < aMenuSearch.length; i++) {
-    //     aMenuSearch[i].onclick = (e) => {
-    //         for (let j = 0; j < aMenuSearch.length; j++) {
-    //             aMenuSearch[j].style.color = "grey";
-    //             aMenuSearch[j].style.fontWeight = "normal";
-    //         }
-    //         aMenuSearch[i].style.color = "pink";
-    //         aMenuSearch[i].style.fontWeight = "bold";
-    //         let data = aMenuSearch[i].dataset.search;
-    //         for (let i = 0; i < cards.length; i++) {
-    //             if (data  === "all") {
-    //                 cards[i].style.display = "flex";
-    //                 cards[i].setAttribute("data-active", "true");
-    //                 doSlider();
-    //             } else {
-    //                 cards[i].style.display = "none";
-    //                 cards[i].setAttribute("data-active", "false");
-    //                 let textSubName = cards[i].querySelector(".card-header__subname").textContent.split("/");
-    //                 textSubName.forEach((item) => {
-    //                    if (item.toUpperCase() === data.toUpperCase()) {
-    //                        cards[i].style.display = "flex";
-    //                        cards[i].setAttribute("data-active", "true");
-    //                        doSlider();
-    //                    } 
-    //                 });
-    //             }
-    //         }
-    //     }
-    // }
 
     // DO SLIDER
     function doSlider() {
