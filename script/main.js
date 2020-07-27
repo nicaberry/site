@@ -131,7 +131,7 @@ window.onload = (e) => {
         let sizeWindowForShowSlider = 576;
         let sizeContainer = parseInt(window.getComputedStyle(myWorkContainer).width);
         if (sizeContainer <= sizeWindowForShowSlider) {
-            slider.style.display = "block";
+            slider.style.display = "flex";
             for (let i = 0; i < cards.length; i++) {
                 sliderWrap.append(cards[i]);
             }
@@ -148,7 +148,7 @@ window.onload = (e) => {
         window.onresize = (e) => {
             sizeContainer = parseInt(window.getComputedStyle(myWorkContainer).width);
             if (sizeContainer <= sizeWindowForShowSlider) {
-                slider.style.display = "block";
+                slider.style.display = "flex";
                 for (let i = 0; i < cards.length; i++) {
                     sliderWrap.append(cards[i]);
                 }
