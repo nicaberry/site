@@ -130,8 +130,7 @@
 
         return cards;
     }
-
-        
+   
 
     function showMyCards(cards) {
         let myWorkContainer = document.querySelector(".my-work-container");
@@ -140,8 +139,6 @@
             myWorkContainer.append(item);
         });
     }
-
-       
 
 
     // ABOUT-ME
@@ -274,47 +271,36 @@
         }
         
         // SHOW SLIDER
-        function showSlider(cards) {
+        function showSlider(cards, sizeWindow) {
             let myWorkContainer = document.querySelector(".my-work-container");
             let slider = document.querySelector(".slider");
             let sliderWrap = document.querySelector(".slider__wrap");
-            let sizeWindowForShowSlider = 576;
+            let sizeWindowForShowSlider = sizeWindow;
             let sizeContainer = parseInt(window.getComputedStyle(myWorkContainer).width);
+            showOrHideSlider(sizeContainer, sizeWindowForShowSlider, slider, cards, sliderWrap, myWorkContainer)
+
+            window.onresize = (e) => {
+                sizeContainer = parseInt(window.getComputedStyle(myWorkContainer).width);
+                showOrHideSlider(sizeContainer, sizeWindowForShowSlider, slider, cards, sliderWrap, myWorkContainer)
+                doSlider(0);
+            }
+        }
+
+        function addCardsInContainer(container, cards) {
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].style.transform = `translateX(0px)`;
+                container.append(cards[i]);
+            }
+        }
+
+        function showOrHideSlider(sizeContainer, sizeWindowForShowSlider, slider, cards, sliderWrap, myWorkContainer) {
             if (sizeContainer <= sizeWindowForShowSlider) {
                 slider.style.display = "flex";
-                for (let i = 0; i < cards.length; i++) {
-                    cards[i].style.transform = `translateX(0px)`;
-                    sliderWrap.append(cards[i]);
-                }
-    
+                addCardsInContainer(sliderWrap, cards);
             }
             if (sizeContainer > sizeWindowForShowSlider) {
                 slider.style.display = "none";
-                for (let i = 0; i < cards.length; i++) {
-                    cards[i].style.transform = `translateX(0px)`;
-                    myWorkContainer.append(cards[i]);
-                }
-    
-            }
-            window.onresize = (e) => {
-                sizeContainer = parseInt(window.getComputedStyle(myWorkContainer).width);
-                if (sizeContainer <= sizeWindowForShowSlider) {
-                    slider.style.display = "flex";
-                    for (let i = 0; i < cards.length; i++) {
-                        cards[i].style.transform = `translateX(0px)`;
-                        sliderWrap.append(cards[i]);
-                    }
-    
-                }
-                if (sizeContainer > sizeWindowForShowSlider) {
-                    slider.style.display = "none";
-                    for (let i = 0; i < cards.length; i++) {
-                        cards[i].style.transform = `translateX(0px)`;
-                        myWorkContainer.append(cards[i]);
-                    }
-    
-                }
-                doSlider(0);
+                addCardsInContainer(myWorkContainer, cards);
             }
         }
         
@@ -327,7 +313,7 @@ window.onload = (e) => {
     toggleDescription(cards);
     searchMenu(cards);
     doSlider(0);
-    showSlider(cards);
+    showSlider(cards, 576);
 }
     
     
