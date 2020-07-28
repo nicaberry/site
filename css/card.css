@@ -29,7 +29,7 @@
     text-align: left;
 }
 
-.card-header__button {
+.card-description__button  {
     background-color: white;
     margin-bottom: 15px;
     margin-left: -5px;
@@ -48,7 +48,7 @@
 }
 
 
-.card-header__descriptionCloseButton {
+.card-description__button_close {
     display: none;
 }
 
@@ -59,7 +59,7 @@
     font-weight: bold;
     word-wrap: break-word;
 }
-.card-header__button:hover,
+.card-description__button:hover,
 .card-header__name:hover {
     color: pink;
  }
@@ -70,7 +70,7 @@
     margin-bottom: 10px;
 }
 
-.card-header__description {
+.card-description {
     display: none;
     color: white;
     padding: 30px;
@@ -111,7 +111,7 @@
     .card-header__github {
         font-size: 13px;
     }
-    .card-header__description {
+    .card-description {
         height: 200px;
     }
 }

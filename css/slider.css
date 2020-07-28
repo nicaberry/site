@@ -2,26 +2,23 @@
     display: none;
 
 }
-@media screen and (max-width: 576px) {
-    .slider__wrap {
-        width: 256px;
-        overflow: hidden;
-        display: flex;
-    }
-    .slider .card  {
-        margin: 0;
-    }
-    .slider__leftButton,
-    .slider__rightButton {
-        font-size: 36px;
-        font-weight: bold;
-        border: none;
-        z-index: 30;
-        bottom: 0px;
-        padding: 15px;
-        background-color: transparent;
-        outline: none;
-    }
-    
-    
+
+.slider__leftButton,
+.slider__rightButton {
+    font-size: 36px;
+    font-weight: bold;
+    border: none;
+    z-index: 30;
+    bottom: 0px;
+    padding: 15px;
+    background-color: transparent;
+    outline: none;
+}
+.slider__wrap {
+    width: 256px;
+    overflow: hidden;
+    display: flex;
+}
+.slider .card  {
+    margin: 0;
 }
