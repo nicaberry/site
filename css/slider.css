@@ -1,19 +1,35 @@
 .slider {
     display: none;
-
+    position: relative;
 }
 
 .slider__leftButton,
 .slider__rightButton {
     font-size: 36px;
     font-weight: bold;
+    color: grey;
     border: none;
-    z-index: 30;
     bottom: 0px;
     padding: 15px;
     background-color: transparent;
     outline: none;
+
+    position: absolute;
+    z-index: 20;
+    bottom: 6%;
 }
+
+.slider__leftButton {
+    left: 0;
+}
+.slider__rightButton {
+    right: 0;
+}
+.slider__leftButton:hover,
+.slider__rightButton:hover {
+    color: pink;
+}
+
 .slider__wrap {
     width: 256px;
     overflow: hidden;
