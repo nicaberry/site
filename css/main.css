@@ -1,19 +1,10 @@
-@import "../css/reset.css";
-@import "../css/header.css";
-@import "../css/primary.css";
-@import "../css/primaryAboutMe.css";
-@import "../css/primaryMyWork.css";
-@import "../css/card.css";
-@import "../css/footer.css";
-@import "../css/slider.css";
-
-
 body {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     background: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {

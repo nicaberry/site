@@ -1,41 +1,45 @@
 .slider {
-    display: none;
     position: relative;
+    display: none;
 }
 
 .slider__leftButton,
 .slider__rightButton {
-    font-size: 36px;
-    font-weight: bold;
+    position: absolute;
+    bottom: 7%;
+    z-index: 20;
+
+    padding: 15px;
+
+    background-color: transparent;
     color: grey;
     border: none;
-    bottom: 0px;
-    padding: 15px;
-    background-color: transparent;
+    font-size: 36px;
+    font-weight: bold;
+
     outline: none;
     cursor: pointer;
-
-    position: absolute;
-    z-index: 20;
-    bottom: 6%;
 }
 
 .slider__leftButton {
     left: 0;
 }
+
 .slider__rightButton {
     right: 0;
 }
+
 .slider__leftButton:hover,
 .slider__rightButton:hover {
     color: pink;
 }
 
 .slider__wrap {
+    display: flex;
     width: 256px;
     overflow: hidden;
-    display: flex;
 }
+
 .slider .card  {
     margin: 0;
 }

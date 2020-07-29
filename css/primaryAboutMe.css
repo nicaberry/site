@@ -1,16 +1,19 @@
-.about-me {
-    padding: 40px;
-    border: 3px solid #111111;
-    border-radius: 3px;
-    color: #111111;
-    margin: 60px 15px 0 15px;
+.about-me {  
     display: none;
     gap: 20px;
     grid-template-areas: 
     "foto skills close"
     "foto skills hello"
     "name skills menu";
+
+    margin: 60px 15px 0 15px;
+    padding: 40px;
+
+    color: #111111;
+    border: 3px solid #111111;
+    border-radius: 3px;
 }
+
 #foto {
     grid-area: foto;
 }
@@ -29,6 +32,7 @@
 #menu {
     grid-area: menu;
 }
+
 .about-me__fotome {
     display: block;
     max-width: 100%;
@@ -44,15 +48,17 @@
 .about-me__buttonClose {
     height: 50px;
     width: 100px;
-    cursor: pointer;
+    padding: 10px 15px;
     justify-self: end;
-    font-size: 14px;
-    font-weight: bold;
+
+    background-color: white;
     border: 3px solid #111111;
     border-radius: 3px;
-    background-color: white;
-    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+
     box-shadow: -3px 3px 0px 1px pink;
+    cursor: pointer;
 }
 
 .about-me__buttonClose:hover {
@@ -90,10 +96,11 @@
 }
 
 .about-me__menu {
-    padding: 0;
-    margin: 15px;
     display: flex;
     justify-content: space-between;
+    
+    padding: 0;
+    margin: 15px;
 }
 
 .about-me__menu li {
