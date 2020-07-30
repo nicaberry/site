@@ -27,10 +27,16 @@ function createCards(info) {
         image.setAttribute("src", item.image);
         image.setAttribute("alt", item.imageAlt);
 
+        let linkImage = document.createElement("a");
+        linkImage.classList.add("linkImage");
+        linkImage.setAttribute("href", item.href);
+        linkImage.setAttribute("target", "_blank");
+        linkImage.append(image);
+
         cardImg.append(buttonOpenDescription);
         cardImg.append(buttonCloseDescription);
         cardImg.append(cardDescription);
-        cardImg.append(image);
+        cardImg.append(linkImage);
 
         //card-header
         let cardHeader = document.createElement("div");
