@@ -42,6 +42,7 @@
 
 .select-search__openButton {
     width: 250px;
+    height: 50px;
     padding: 10px 15px;
 
     font-weight: bold;
