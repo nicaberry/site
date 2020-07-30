@@ -6,7 +6,8 @@ window.onload = (e) => {
     let cards = document.querySelectorAll(".card");
     showAboutMeWindow();
     toggleDescription(cards);
-    searchMenu(cards);
+    openSearchMenu();
+    clickMenuLiNoActive(cards);
     doSlider(0);
     showSlider(cards, 576);
 }

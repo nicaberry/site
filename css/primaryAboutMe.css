@@ -1,5 +1,5 @@
 .about-me {  
-    display: none;
+    display: grid;
     gap: 20px;
     grid-template-areas: 
     "foto skills close"

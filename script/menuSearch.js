@@ -1,19 +1,30 @@
 "use strict";
 //MENU-SEARCH
-function searchMenu(cards) {
+function openSearchMenu() {
+    let menuLiNoActive = document.querySelectorAll(".select-search__wrap li[data-active=false]");
+    let menuSerchOpenButton = document.querySelector(".select-search__openButton");
+   
+    document.onclick = (e) => {
+        if (e.target.dataset.openMenu === "false") {
+            for (let i = 0; i < menuLiNoActive.length; i++) {
+                menuLiNoActive[i].style.display = "block"; 
+            }
+            menuSerchOpenButton.setAttribute("data-open-menu", "true");
+        } else {
+            for (let i = 0; i < menuLiNoActive.length; i++) {
+                menuLiNoActive[i].style.display = "none"; 
+            }
+            menuSerchOpenButton.setAttribute("data-open-menu", "false");
+        }  
+    }
+}
+
+function clickMenuLiNoActive(cards) {
     let menuSerchOpenButton = document.querySelector(".select-search__openButton");
     let menuLiNoActive = document.querySelectorAll(".select-search__wrap li[data-active=false]");
-   
-    menuSerchOpenButton.onclick = (e) => {
-        for (let i = 0; i <menuLiNoActive.length; i++) {
-            menuLiNoActive[i].style.display = "block"; 
-        }
-    }
+
     for (let i = 0; i < menuLiNoActive.length; i++) {
         menuLiNoActive[i].onclick = (e) => {
-            for (let j = 0; j < menuLiNoActive.length; j++) {
-                menuLiNoActive[j].style.display = "none"; 
-            } 
         let data = menuLiNoActive[i].getAttribute("data-search");
         menuSerchOpenButton.innerHTML = "#" + data + " &#9662;"; 
 
@@ -38,4 +49,3 @@ function searchMenu(cards) {
         }
     }
 }
-
