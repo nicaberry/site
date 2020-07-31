@@ -1,6 +1,15 @@
 "use strict";
 let infoAboutMyWorkForCard = [
     {
+        name: "Units",
+        subname: "JAVASCRIPT/CSS/HTML/HELP",
+        href: "./myWork/Units/index.html",
+        githubhref: "https://github.com/nicaberry/units",
+        image: "./images/myWork/units.png",
+        imageAlt: "Units",
+        description: "Изучение размеров, которые используются в браузере. Плюс практика работы с 'iframe'."
+    },
+    {
         name: "Itten Circle",
         subname: "JAVASCRIPT/CSS/HTML",
         href: "./myWork/IttienCircle/index.html",
