@@ -1,6 +1,15 @@
 "use strict";
 let infoAboutMyWorkForCard = [
     {
+        name: "I learning Grid",
+        subname: "CSS/HTML/HELP",
+        href: "./myWork/learnGrid/index.html",
+        githubhref: "https://github.com/nicaberry/learnGrid",
+        image: "./images/myWork/learnGrid.png",
+        imageAlt: "learnGrid",
+        description: "Изучение Grid. Пробовала создать адаптивный сайт с применением Grid. А также сделать галерею изображений с разными размерами."
+    },
+    {
         name: "Units",
         subname: "JAVASCRIPT/CSS/HTML/HELP",
         href: "./myWork/Units/index.html",
