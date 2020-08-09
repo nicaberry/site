@@ -1,6 +1,7 @@
 .footer {
     width: 100%;
     border-top: 3px solid pink;
+    background-color: white;
 }
 
 .footer-container {

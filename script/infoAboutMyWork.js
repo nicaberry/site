@@ -1,6 +1,15 @@
 "use strict";
 let infoAboutMyWorkForCard = [
     {
+        name: "Burger-JS",
+        subname: "JAVASCRIPT/CSS/HTML/HELP",
+        href: "./myWork/burger_menu/index.html",
+        githubhref: "https://github.com/nicaberry/burger-menu-js",
+        image: "./images/myWork/burgerMenuJS.png",
+        imageAlt: "burger-menu JS",
+        description: "Попытка создать адаптивное меню при помощи JavaScript. Здесь необходимо учитывать, что JS может создавать автоматически аттрубуты в элементах. В некоторых случаях их необходимо удалять, здесь как раз тот случай."
+    },
+    {
         name: "I learning Grid",
         subname: "CSS/HTML/HELP",
         href: "./myWork/learnGrid/index.html",

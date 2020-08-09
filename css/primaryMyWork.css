@@ -81,13 +81,15 @@
 }
 
 .my-work-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 335px);
+    grid-auto-rows: auto;
+    gap: 2rem;
     justify-content: center;
-    
-    width: 100%;
-    margin-top: 30px;
-    padding-bottom: 60px;
+    justify-items: center;
+    align-items: start;
+
+    margin: 2rem 0;
 }
 
 @media screen and (max-width: 768px) {

@@ -74,8 +74,10 @@ function createCards(info) {
 
 function showMyCards(cards) {
     let myWorkContainer = document.querySelector(".my-work-container");
+    let slider = document.querySelector(".slider");
 
     cards.forEach((item) => {
         myWorkContainer.append(item);
+        slider.append(item);
     });
 }
