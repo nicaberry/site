@@ -32,7 +32,6 @@ function clickMenuLiNoActive(cards) {
                 if (data  === "all") {
                     cards[i].style.display = "flex";
                     cards[i].setAttribute("data-active", "true");
-                    doSlider(0);
                 } else {
                     cards[i].style.display = "none";
                     cards[i].setAttribute("data-active", "false");
@@ -41,11 +40,11 @@ function clickMenuLiNoActive(cards) {
                         if (item.toUpperCase() === data.toUpperCase()) {
                             cards[i].style.display = "flex";
                             cards[i].setAttribute("data-active", "true");
-                            doSlider(0);
                         } 
                     });
                 }
             }
+            doSlider(0);
         }
     }
 }
