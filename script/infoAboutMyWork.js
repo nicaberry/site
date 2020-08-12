@@ -1,6 +1,15 @@
 "use strict";
 let infoAboutMyWorkForCard = [
     {
+        name: "Game Zmey 2",
+        subname: "JAVASCRIPT/CSS/HTML",
+        href: "./myWork/game zmey 2/index.html",
+        githubhref: "https://github.com/nicaberry/game-zmey-2",
+        image: "./images/myWork/gameZmey2.png",
+        imageAlt: "game snake",
+        description: "Опять попробовала сделать игру 'змейка', на этот раз с применением MVC. Целью было создать такую игру, в которой при достижение определенных очков, появлялся новый уровень и поле этого уровня, было отлично от предыдущего. В ходе работы было выяснено, что при установке обработчика события на пробел клавиатуры, нужно помнить о псевдо классе :focus, который может поспособствовать ошибкам."
+    },
+    {
         name: "Burger-JS",
         subname: "JAVASCRIPT/CSS/HTML/HELP",
         href: "./myWork/burger_menu/index.html",
