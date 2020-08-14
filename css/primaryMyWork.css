@@ -30,6 +30,7 @@
     width: 250px;
     height: 40px;
     margin: 0 auto;
+    margin-bottom: 2rem;
 }
 
 .select-search__wrap {

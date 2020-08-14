@@ -1,6 +1,15 @@
 "use strict";
 let infoAboutMyWorkForCard = [
     {
+        name: "Learn SASS",
+        subname: "CSS/HTML/HELP",
+        href: "./myWork/learnSASS/index.html",
+        githubhref: "https://github.com/nicaberry/learnSASS",
+        image: "./images/myWork/learnSASS.png",
+        imageAlt: "SASS",
+        description: "Познавала SCSS.",
+    },
+    {
         name: "Game Zmey 2",
         subname: "JAVASCRIPT/CSS/HTML",
         href: "./myWork/game zmey 2/index.html",
